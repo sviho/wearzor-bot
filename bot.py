@@ -2,9 +2,9 @@ import requests
 import random
 import telebot
 
-
-bot = telebot.TeleBot('111111:your_telegram_bot_token')
+TOKEN = '111111:your_telegram_bot_token'
 API_KEY = 'your_api_key_to_openweatherdata'
+bot = telebot.TeleBot(TOKEN)
 
 
 @bot.message_handler(commands=['start'])
